@@ -1,0 +1,32 @@
+.contact {
+    padding-bottom: 80px;
+
+    &-block {
+        width: 100%;
+        border-radius: 20px;
+        background: $grey-light url(../img/background-form.png) no-repeat center / cover;
+        padding: 75px 64px;
+
+        &__title {
+            font-size: 32px;
+            font-family: "Navigo", sans-serif;
+            font-weight: 700;
+            line-height: 40px;
+            color: $black;
+        }
+
+        &__text {
+            margin: 24px 0px;
+            max-width: 400px;
+        }
+
+        &__link {
+            color: $teal;
+            font-size: 24px;
+            font-family: "Navigo", sans-serif;
+            font-weight: 700;
+            line-height: 30px;
+            text-decoration: none;
+        }
+    }
+}

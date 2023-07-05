@@ -1,0 +1,141 @@
+@import "base/mixins";
+@import "base/variables";
+@import "base/reset";
+@import "base/fonts";
+
+body {
+    line-height: 100%;
+    font-family: 'Navigo', sans-serif;
+    font-family: 'ALS Hauss', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    padding: 0px 32px;
+    margin: 0 auto;
+}
+
+p {
+    color: $grey;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.main__title {
+    font-size: 54px;
+    font-family: "Navigo", sans-serif;
+    font-weight: 700;
+    line-height: 70px;
+    color: #fff;
+}
+
+.title {
+    font-size: 48px;
+    font-family: "Navigo", sans-serif;
+    font-weight: 700;
+    line-height: 54px;
+    color: $black;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 56px 0px;
+}
+
+.block {
+    width: 100%;
+    border-radius: 12px;
+    background: $grey-light;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    overflow: hidden;
+
+    &__title {
+        color: $black;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        line-height: 22px;
+        font-size: 14px;
+    }
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 24px;
+    border-radius: 8px;
+    background: $gold;
+    font-size: 16px;
+    font-weight: 500;
+    color: $black;
+    text-decoration: none;
+}
+
+.accordion {
+    border-radius: 12px;
+    border: 1px solid #E9EAEA;
+    width: 99%;
+    overflow: hidden;
+}
+
+.accordion__title {
+    padding: 24px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: $black;
+    cursor: pointer;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background: url(../img/icons/select-arrow-icon.svg) no-repeat center;
+        transition: all 0.3s;
+    }
+    &.active {
+        &::before {
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+}
+
+.accordion__content {
+    border-top: 1px solid #E9EAEA;
+    padding: 0px 32px;
+    max-height: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+
+@import "blocks/header";
+@import "blocks/hamburger";
+@import "blocks/primary";
+@import "blocks/feature";
+@import "blocks/customSolutions";
+@import "blocks/fundManagers";
+@import "blocks/outsourcing";
+@import "blocks/insurance";
+@import "blocks/contact";
+@import "blocks/main";
+@import "blocks/footer";
+@import "blocks/media";

@@ -1,0 +1,115 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+
+    .container {
+        transition: all 0.2s;
+        &.active {
+            width: 695px;
+        }
+    }
+
+    &__top {
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #E9EAEA;
+        position: relative;
+    }
+
+    &__bottom {
+        padding: 10px 0px;
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 32px;
+        color: #2B2D33;
+        font-family: 'Futura PT Demi', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        line-height: 18px;
+        width: 40px;
+        overflow: hidden;
+
+        span {
+            margin-left: 12px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            width: 170px;
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+
+        &__link {
+            font-size: 16px;
+            font-weight: 550;
+            line-height: 26px;
+            color: $grey;
+            margin-right: 32px;
+            text-decoration: none;
+            transition: all 0.3s;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                color: $black;
+            }
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+
+    &__email {
+        font-size: 16px;
+        color: $black;
+        font-weight: 550;
+        line-height: 26px;
+        margin-left: auto;
+        text-decoration: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 32px;
+    }
+
+    &-submenu {
+        display: flex;
+        align-items: center;
+
+        &__link {
+            margin-right: 32px;
+            color: $grey;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 22px;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}
