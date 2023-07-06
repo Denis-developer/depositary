@@ -14,4 +14,10 @@
             background: $stealBlue url(../img/documents-page/background-img.png) no-repeat right bottom / contain;
         }
     }
+    &.disclosure {
+        padding-top: 67px;
+        .primary {
+            background: $stealBlue url(../img/disclosure-page/background-img.png) no-repeat right 50px bottom / contain;
+        }
+    }
 }
