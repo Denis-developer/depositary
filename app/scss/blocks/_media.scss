@@ -117,6 +117,14 @@
         line-height: 130%;
     }
 
+    .main {
+        &.documents {
+            .primary {
+                background-position: right -100px bottom;
+            }
+        }
+    }
+
     .raiffeisen {
         &-banner {
             padding: 20px;
@@ -140,6 +148,19 @@
 
     .main {
         padding-top: 111px;
+
+        &.documents {
+            padding-top: 73px;
+
+            .primary {
+                padding: 43px 0px;
+                background-position: right -40px bottom;
+            }
+        }
+    }
+
+    .file {
+        gap: 20px;
     }
 
     .accordion {
@@ -152,6 +173,16 @@
             }
         }
 
+        &__subtitle {
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        &__wrapper {
+            margin-bottom: 24px;
+            gap: 24px;
+        }
+
         &__content {
             padding: 0px 20px;
 
@@ -159,10 +190,6 @@
                 padding-top: 20px;
                 padding-bottom: 20px;
             }
-        }
-
-        &-block {
-            gap: 20px;
         }
     }
 
@@ -321,18 +348,37 @@
     }
 
     .values {
-        padding-bottom: 48px;
         &__wrapper {
             flex-direction: column;
             margin-top: 32px;
             gap: 24px;
         }
+
         &-block {
             width: 100%;
             gap: 20px;
+
             &__title {
                 margin-bottom: 8px;
             }
+        }
+    }
+
+    .documents {
+        padding-top: 48px;
+
+        &__wrapper {
+            gap: 24px;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 32px;
+        }
+
+        &-accordion {
+            margin-top: 48px;
         }
     }
 
@@ -443,7 +489,7 @@
     }
 
     .insurance {
-        padding: 48px 0px;
+        padding-top: 48px;
 
         &__wrapper {
             display: flex;
@@ -482,7 +528,7 @@
     }
 
     .contact {
-        padding-bottom: 48px;
+        padding: 48px 0px;
 
         &-block {
             padding: 32px 16px 146px 16px;

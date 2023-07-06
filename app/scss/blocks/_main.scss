@@ -7,4 +7,11 @@
             background: $stealBlue url(../img/about-page/background-img.png) no-repeat right bottom / cover;
         }
     }
+    overflow: hidden;
+    &.documents {
+        padding-top: 67px;
+        .primary {
+            background: $stealBlue url(../img/documents-page/background-img.png) no-repeat right bottom / contain;
+        }
+    }
 }
