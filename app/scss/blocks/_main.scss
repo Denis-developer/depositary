@@ -1,4 +1,10 @@
 .main {
     padding-top: 109px;
     overflow: hidden;
+    &.about {
+        padding-top: 67px;
+        .primary {
+            background: $stealBlue url(../img/about-page/background-img.png) no-repeat right bottom / cover;
+        }
+    }
 }

@@ -46,6 +46,7 @@
                 visibility: hidden;
                 opacity: 0;
                 transition: all 0.4s;
+
                 &.show {
                     opacity: 1;
                     visibility: visible;
@@ -115,6 +116,12 @@
         font-size: 7vw;
         line-height: 130%;
     }
+
+    .raiffeisen {
+        &-banner {
+            padding: 20px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -139,10 +146,23 @@
         &__title {
             padding: 20px;
             padding-right: 50px;
+
+            &::before {
+                right: 20px;
+            }
         }
 
         &__content {
             padding: 0px 20px;
+
+            &.show {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+
+        &-block {
+            gap: 20px;
         }
     }
 
@@ -168,6 +188,11 @@
                 margin-right: 20px;
             }
         }
+
+        &__email {
+            font-size: 14px;
+            line-height: 22px;
+        }
     }
 
     .primary {
@@ -182,6 +207,7 @@
 
     .feature {
         padding-top: 48px;
+
         &__wrapper {
             display: flex;
             flex-direction: column;
@@ -201,6 +227,111 @@
             &__title {
                 font-size: 24px;
                 line-height: 30px;
+            }
+        }
+    }
+
+    .about {
+        padding-top: 48px;
+
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__text {
+            margin-top: 24px;
+        }
+
+        &__subtitle {
+            margin-top: 32px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &-block {
+            margin-top: 24px;
+
+            &__icon {
+                margin-right: 20px;
+            }
+        }
+
+        &-accordion {
+            margin-top: 32px;
+
+            &__title {
+                padding: 20px 16px;
+            }
+        }
+    }
+
+    .raiffeisen {
+        padding-top: 70px;
+        padding-bottom: 48px;
+
+        &__title {
+            margin: 0;
+        }
+
+        &__text {
+            margin-bottom: 0;
+            margin-top: 24px;
+        }
+
+        &__wrapper {
+            margin-top: 8px;
+            margin-bottom: 24px;
+        }
+
+        &-block {
+            padding: 24px 0px;
+
+            .icon__wrapper {
+                padding: 12px;
+            }
+
+            &__title {
+                font-size: 20px;
+                line-height: 28px;
+                margin-bottom: 8px;
+            }
+        }
+
+        &-banner {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 0px;
+
+            &__img {
+                width: 100px;
+            }
+
+            &__title {
+                font-size: 24px;
+                line-height: 30px;
+                margin-top: 24px;
+                margin-bottom: 12px;
+            }
+
+            &__text {
+
+                min-width: auto;
+            }
+        }
+    }
+
+    .values {
+        padding-bottom: 48px;
+        &__wrapper {
+            flex-direction: column;
+            margin-top: 32px;
+            gap: 24px;
+        }
+        &-block {
+            width: 100%;
+            gap: 20px;
+            &__title {
+                margin-bottom: 8px;
             }
         }
     }
@@ -285,12 +416,7 @@
                 margin-bottom: 4px;
             }
 
-            &__content {
-                &.show {
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                }
-            }
+            &__content {}
 
             &__item {
                 font-size: 14px;
@@ -416,8 +542,16 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
     .primary {
         background: $stealBlue url(../img/main-page/background-img_mob.png) no-repeat left bottom / contain;
+    }
+
+    .main {
+        &.about {
+            .primary {
+                background: $stealBlue url(../img/about-page/background-img_mob.png) no-repeat left bottom 40px / contain;
+            }
+        }
     }
 }

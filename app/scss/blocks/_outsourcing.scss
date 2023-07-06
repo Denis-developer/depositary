@@ -47,10 +47,6 @@
         }
         &__content {
             gap: 32px;
-            &.show {
-                padding-top: 32px;
-                padding-bottom: 32px;
-            }
         }
         &__title {
             color: $black;

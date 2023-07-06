@@ -88,9 +88,37 @@ p {
     border: 1px solid #E9EAEA;
     width: 99%;
     overflow: hidden;
+
+    &-block {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+
+        &__title {
+            color: $black;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        &__text {
+            margin-top: 4px;
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            column-gap: 24px;
+            span {
+                color: #a2a4a6;
+            }
+        }
+    }
 }
 
 .accordion__title {
+    display: flex;
+    align-items: center;
     padding: 24px 32px;
     font-size: 16px;
     font-weight: 500;
@@ -98,6 +126,11 @@ p {
     color: $black;
     cursor: pointer;
     position: relative;
+
+    img {
+        margin-right: 26px;
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -109,6 +142,7 @@ p {
         background: url(../img/icons/select-arrow-icon.svg) no-repeat center;
         transition: all 0.3s;
     }
+
     &.active {
         &::before {
             transform: translateY(-50%) rotate(180deg);
@@ -120,10 +154,24 @@ p {
     border-top: 1px solid #E9EAEA;
     padding: 0px 32px;
     max-height: 0px;
+    row-gap: 48px;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
     transition: all 0.4s;
+    &.show {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.icon__wrapper {
+    padding: 12px;
+    border-radius: 12px;
+    background-color: $gold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -137,5 +185,8 @@ p {
 @import "blocks/insurance";
 @import "blocks/contact";
 @import "blocks/main";
+@import "blocks/about";
+@import "blocks/raiffeisen";
+@import "blocks/values";
 @import "blocks/footer";
 @import "blocks/media";
