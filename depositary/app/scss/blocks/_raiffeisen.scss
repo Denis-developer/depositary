@@ -1,0 +1,74 @@
+.raiffeisen {
+    padding: 80px 0px;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        color: $black;
+    }
+
+    &__wrapper {
+        margin-top: 24px;
+        margin-bottom: 80px;
+    }
+
+    &-block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 1px solid #E9EAEA;
+        padding: 32px 0px;
+        gap: 15px;
+
+        &:last-child {
+            border: none;
+        }
+
+        .icon__wrapper {
+            padding: 16px;
+        }
+
+        &__title {
+            font-family: "Navigo", sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 30px;
+            color: $black;
+            margin-bottom: 12px;
+        }
+    }
+
+    &-banner {
+        display: flex;
+        border-radius: 20px;
+        background-color: $grey-light;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 64px;
+        gap: 15px;
+
+        &__title {
+            font-family: "Navigo", sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 42px;
+            color: $black;
+            margin-bottom: 32px;
+        }
+
+        &__text {
+            color: $black;
+            max-width: 400px;
+            min-width: 300px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        &__img {
+            min-width: 0;
+        }
+    }
+}

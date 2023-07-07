@@ -1,13 +1,31 @@
 .fundManagers {
     background-color: $grey-light;
-    padding: 80px 0px; 
+    padding: 80px 0px;
+
     &__wrapper {
         grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     }
+
     &-block {
         background: #fff;
         padding: 0;
         padding-left: 32px;
+
+        &__title {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &__img {
+            max-width: 160px;
+            width: 100%;
+            min-width: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
         &__img_mob {
             display: none;
         }

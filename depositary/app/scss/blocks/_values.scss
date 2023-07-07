@@ -1,0 +1,31 @@
+.values {
+    .icon__wrapper {
+        background-color: #F4F4F4;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        margin-top: 56px;
+    }
+
+    &-block {
+        display: flex;
+        align-items: flex-start;
+        flex-basis: calc(50% - 16px);
+        gap: 24px;
+
+        &__title {
+            margin-bottom: 12px;
+            color: $black;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}

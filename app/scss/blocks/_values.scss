@@ -3,23 +3,25 @@
         background-color: #F4F4F4;
     }
 
+    &__title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
     &__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px;
-        margin-top: 56px;
+        row-gap: 32px;
+        margin-bottom: 0;
     }
 
     &-block {
-        display: flex;
         align-items: flex-start;
-        flex-basis: calc(50% - 16px);
         gap: 24px;
+        background: #fff;
+        padding: 0;
 
         &__title {
             margin-bottom: 12px;
-            color: $black;
-            font-weight: 500;
+            font-weight: 550;
             font-size: 16px;
         }
 

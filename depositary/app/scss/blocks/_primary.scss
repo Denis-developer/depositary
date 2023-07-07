@@ -1,0 +1,16 @@
+.primary {
+    padding: 105px 0px;
+    background: $stealBlue url(../img/main-page/background-img.png) no-repeat right bottom / contain;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        max-width: 530px;
+    }
+    &__text {
+        color: #fff;
+        max-width: 520px;
+        margin-bottom: 40px;
+        margin-top: 24px;
+    }
+}

@@ -1,0 +1,632 @@
+@media (max-width: 1300px) {
+    .header-logo {
+        left: 16px;
+    }
+
+    .header__email {
+        right: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        .container {
+            padding-left: 100px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0px 16px;
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 120%;
+    }
+
+    .header__hamburger {
+        display: block;
+    }
+
+    .header {
+        &__top {
+            padding: 16px;
+
+            .container {
+                padding: 0;
+                height: 100%;
+                width: 100vw !important;
+                background: rgba(0, 0, 0, 0.5);
+                position: fixed;
+                left: 0;
+                top: 72px;
+                z-index: 10;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.4s;
+
+                &.show {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        &-nav {
+            width: 100%;
+            padding-bottom: 40px;
+            padding-top: 20px;
+            background: #fff;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__link {
+                padding: 12px 16px;
+            }
+        }
+
+        &-logo {
+            position: static;
+            transform: none;
+            flex-shrink: 0;
+
+            span {
+                display: none;
+            }
+        }
+
+        &__email {
+            position: static;
+            transform: none;
+        }
+
+        &-submenu {
+            overflow: auto;
+
+            &::-webkit-scrollbar {
+                width: 0px;
+                height: 0px;
+            }
+
+            &__link {
+                flex-shrink: 0;
+            }
+        }
+
+        &__bottom {
+            .container {
+                width: 100%;
+                padding: 0px 16px;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .main {
+        &.disclosure {
+            padding-top: 67px;
+
+            .primary {
+                background-position: right -70px bottom;
+                background-size:60vw;
+            }
+        }
+    }
+
+    .customSolutions {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main__title {
+        font-size: 7vw;
+        line-height: 130%;
+    }
+
+    .main {
+        &.documents {
+            .primary {
+                background-position: right -100px bottom;
+            }
+        }
+    }
+
+    .raiffeisen {
+        &-banner {
+            padding: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .wrapper {
+        margin: 32px 0px;
+    }
+
+    .block {
+        padding: 20px;
+    }
+
+    .main {
+        padding-top: 111px;
+
+        &.documents {
+            padding-top: 73px;
+
+            .primary {
+                padding: 43px 0px;
+                background-position: right -40px bottom;
+            }
+        }
+        &.disclosure {
+            padding-top: 73px;
+
+            .primary {
+                padding: 43px 0px;
+                background-size: contain;
+                background-position: right -30px bottom;
+            }
+        }
+    }
+
+    .file {
+        gap: 20px;
+
+        &__text {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .disclosure {
+        padding-top: 48px;
+    }
+
+    .accordion {
+        &__title {
+            padding: 20px;
+            padding-right: 50px;
+
+            &::before {
+                right: 20px;
+            }
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        &__wrapper {
+            margin-bottom: 24px;
+            gap: 24px;
+        }
+
+        &__content {
+            padding: 0px 20px;
+
+            &.show {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .main__title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .header {
+        &-submenu {
+            &__link {
+                font-size: 13px;
+                line-height: 18px;
+                margin-right: 20px;
+            }
+        }
+
+        &__email {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    .primary {
+        background-size: 700px;
+        padding: 16px 0px;
+
+        &__text {
+            margin-top: 12px;
+            margin-bottom: 190px;
+        }
+    }
+
+    .feature {
+        padding-top: 48px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin: 0;
+        }
+
+        &-block {
+            padding: 15px;
+            padding-left: 20px;
+            gap: 0px;
+
+            &__img {
+                min-width: 0px;
+            }
+
+            &__title {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .about {
+        padding-top: 48px;
+
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__text {
+            margin-top: 24px;
+        }
+
+        &__subtitle {
+            margin-top: 32px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &-block {
+            margin-top: 24px;
+
+            &__icon {
+                margin-right: 20px;
+            }
+        }
+
+        &-accordion {
+            margin-top: 32px;
+
+            &__title {
+                padding: 20px 16px;
+            }
+        }
+    }
+
+    .raiffeisen {
+        padding-top: 70px;
+        padding-bottom: 48px;
+
+        &__title {
+            margin: 0;
+        }
+
+        &__text {
+            margin-bottom: 0;
+            margin-top: 24px;
+        }
+
+        &__wrapper {
+            margin-top: 8px;
+            margin-bottom: 24px;
+        }
+
+        &-block {
+            padding: 24px 0px;
+
+            .icon__wrapper {
+                padding: 12px;
+            }
+
+            &__title {
+                font-size: 20px;
+                line-height: 28px;
+                margin-bottom: 8px;
+            }
+        }
+
+        &-banner {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 0px;
+
+            &__img {
+                width: 100px;
+            }
+
+            &__title {
+                font-size: 24px;
+                line-height: 30px;
+                margin-top: 24px;
+                margin-bottom: 12px;
+            }
+
+            &__text {
+
+                min-width: auto;
+            }
+        }
+    }
+
+    .values {
+        &__wrapper {
+            flex-direction: column;
+            margin-top: 32px;
+            gap: 24px;
+        }
+
+        &-block {
+            width: 100%;
+            gap: 20px;
+
+            &__title {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .documents {
+        padding-top: 48px;
+
+        &__wrapper {
+            gap: 24px;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 32px;
+        }
+
+        &-accordion {
+            margin-top: 48px;
+        }
+    }
+
+    .customSolutions {
+        padding: 48px 0px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-bottom: 16px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    .fundManagers {
+        padding: 48px 0px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-block {
+            flex-direction: column-reverse;
+            padding: 0;
+            gap: 0px;
+
+            &__title {
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 12px;
+            }
+
+            &__img {
+                background: $stealBlue;
+                width: 100%;
+                text-align: center;
+
+                img {
+                    display: none;
+                }
+
+                &_mob {
+                    display: inline-block !important;
+                }
+            }
+
+            &__content {
+                padding: 20px;
+                padding-right: 8px;
+            }
+        }
+    }
+
+    .outsourcing {
+        padding-bottom: 45px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &-accordion {
+            margin-top: 48px;
+
+            &__subtitle {
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 4px;
+            }
+
+            &__content {}
+
+            &__item {
+                font-size: 14px;
+                line-height: 22px;
+                margin-top: 4px;
+            }
+        }
+
+        &-block {
+            flex-direction: row;
+
+            &__title {
+                margin-top: 0;
+                margin-bottom: 8px;
+            }
+
+            &__num {
+                font-size: 16px;
+                line-height: 26px;
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+
+    .insurance {
+        padding-top: 48px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-block {
+            flex-direction: column-reverse;
+            padding: 0;
+            gap: 0px;
+
+            img {
+                display: none;
+            }
+
+            &__content {
+                padding: 20px;
+            }
+
+            &__title {
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 12px;
+            }
+
+            &__img {
+                background: $stealBlue;
+                width: 100%;
+                text-align: center;
+
+                &_mob {
+                    display: inline-block !important;
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding: 48px 0px;
+
+        &-block {
+            padding: 32px 16px 146px 16px;
+            background: $grey-light url(../img/background-form_mob.png) no-repeat bottom right / auto;
+
+            &__title {
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            &__text {
+                font-size: 16px;
+                line-height: 26px;
+                margin: 16px 0px;
+            }
+
+            &__link {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+    }
+
+    .footer {
+
+        &__top,
+        &__bottom {
+            padding: 20px 0px;
+        }
+
+        &__bottom {
+            .container {
+                height: 110px;
+                overflow: auto;
+
+                &::-webkit-scrollbar {
+                    width: 3px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: $grey;
+                    border-radius: 5px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: #E1E1E3;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        &__text {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .primary {
+        background: $stealBlue url(../img/main-page/background-img_mob.png) no-repeat left bottom / contain;
+    }
+
+    .main {
+        &.about {
+            .primary {
+                background: $stealBlue url(../img/about-page/background-img_mob.png) no-repeat left bottom 40px / contain;
+            }
+        }
+    }
+}

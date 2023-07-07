@@ -1,0 +1,28 @@
+.feature {
+    padding-top: 80px;
+
+    &__wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        margin: 0;
+    }
+
+    &-block {
+        margin: 0 auto;
+        margin-top: 0;
+        padding: 24px 32px;
+        max-width: 510px;
+
+        &__title {
+            font-size: 30px;
+            font-family: "Navigo", sans-serif;
+            font-weight: 700;
+            line-height: 38px;
+            margin-bottom: 10px;
+        }
+
+        &__content {
+            max-width: 150px;
+            flex-shrink: 0;
+        }
+    }
+}

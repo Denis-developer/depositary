@@ -115,9 +115,14 @@
         }
     }
 
-    .customSolutions {
+    .fundManagers {
         &__wrapper {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            flex-direction: column;
+        }
+    }
+    .insurance {
+        &__wrapper {
+            flex-direction: column;
         }
     }
 }
@@ -136,6 +141,30 @@
         }
     }
 
+    .feature {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+
+    .customSolutions {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+
+    .outsourcing {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+
+    .values {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+
     .raiffeisen {
         &-banner {
             padding: 20px;
@@ -151,6 +180,7 @@
 
     .wrapper {
         margin: 32px 0px;
+        row-gap: 16px;
     }
 
     .block {
@@ -172,9 +202,9 @@
             padding-top: 73px;
 
             .primary {
-                padding: 43px 0px;
-                background-size: contain;
-                background-position: right -30px bottom;
+                padding: 26px 0px;
+                background-size: 220px;
+                background-position: right -15px bottom;
             }
         }
     }
@@ -265,9 +295,6 @@
         padding-top: 48px;
 
         &__wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
             margin: 0;
         }
 
@@ -275,10 +302,6 @@
             padding: 15px;
             padding-left: 20px;
             gap: 0px;
-
-            &__img {
-                min-width: 0px;
-            }
 
             &__title {
                 font-size: 24px;
@@ -378,13 +401,12 @@
 
     .values {
         &__wrapper {
-            flex-direction: column;
-            margin-top: 32px;
-            gap: 24px;
+            margin-bottom: 0;
+            row-gap: 24px;
         }
 
         &-block {
-            width: 100%;
+            padding: 0;
             gap: 20px;
 
             &__title {
@@ -414,11 +436,6 @@
     .customSolutions {
         padding: 48px 0px;
 
-        &__wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-
         &__title {
             margin-bottom: 16px;
         }
@@ -431,11 +448,6 @@
 
     .fundManagers {
         padding: 48px 0px;
-
-        &__wrapper {
-            display: flex;
-            flex-direction: column;
-        }
 
         &-block {
             flex-direction: column-reverse;
@@ -451,10 +463,12 @@
             &__img {
                 background: $stealBlue;
                 width: 100%;
+                max-width: none;
                 text-align: center;
 
                 img {
                     display: none;
+                    width: auto;
                 }
 
                 &_mob {
@@ -473,9 +487,7 @@
         padding-bottom: 45px;
 
         &__wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
+            row-gap: 24px;
         }
 
         &__title {
@@ -520,11 +532,6 @@
     .insurance {
         padding-top: 48px;
 
-        &__wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-
         &-block {
             flex-direction: column-reverse;
             padding: 0;
@@ -532,6 +539,7 @@
 
             img {
                 display: none;
+                width: auto;
             }
 
             &__content {
@@ -547,6 +555,7 @@
             &__img {
                 background: $stealBlue;
                 width: 100%;
+                max-width: none;
                 text-align: center;
 
                 &_mob {
@@ -561,7 +570,7 @@
 
         &-block {
             padding: 32px 16px 146px 16px;
-            background: $grey-light url(../img/background-form_mob.png) no-repeat bottom right / auto;
+            background: $grey-light url(../img/background-form_mob.png) no-repeat bottom right / contain;
 
             &__title {
                 font-size: 24px;

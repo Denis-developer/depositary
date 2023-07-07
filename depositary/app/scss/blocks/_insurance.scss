@@ -1,0 +1,25 @@
+.insurance {
+    padding-top: 80px;
+
+    &__wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &-block {
+        padding: 10px 32px;
+        padding-right: 0;
+
+        &__title {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+        &__img_mob {
+            display: none;
+        }
+    }
+}

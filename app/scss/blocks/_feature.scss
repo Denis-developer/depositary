@@ -2,15 +2,16 @@
     padding-top: 80px;
 
     &__wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         margin: 0;
     }
 
     &-block {
-        margin: 0 auto;
-        margin-top: 0;
         padding: 24px 32px;
-        max-width: 510px;
+
+        &__img {
+            max-width: 160px;
+            min-width: 0;
+        }
 
         &__title {
             font-size: 30px;
