@@ -310,6 +310,7 @@
 
     .btn {
         width: 100%;
+        padding-top: 0;
     }
 
     .header {
@@ -364,6 +365,7 @@
 
         &__text {
             margin-top: 24px;
+            max-width: 325px;
         }
 
         &__subtitle {

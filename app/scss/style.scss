@@ -73,9 +73,10 @@ p {
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     height: 52px;
     padding: 0px 24px;
-    padding-top: 4px;
+    padding-top: 3px;
     border-radius: 8px;
     background: $gold;
     font-style: normal;
