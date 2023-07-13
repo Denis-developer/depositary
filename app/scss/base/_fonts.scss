@@ -9,6 +9,17 @@
 }
 
 @font-face {
+    font-family: 'Navigo';
+    src: url('../fonts/Navigo-Medium.woff2') format('woff2'),
+        url('../fonts/Navigo-Medium.woff') format('woff'),
+        url('../fonts/Navigo-Medium.svg#Navigo-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
     font-family: 'ALS Hauss';
     src: url('../fonts/ALSHauss-Medium.woff2') format('woff2'),
         url('../fonts/ALSHauss-Medium.woff') format('woff'),

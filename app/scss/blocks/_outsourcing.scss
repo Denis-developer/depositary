@@ -55,9 +55,6 @@
         }
 
         &__title {
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 28px;
 
             &.active {
                 background-color: #fff;
@@ -70,6 +67,9 @@
             font-weight: 550;
             line-height: 26px;
             margin-top: 24px;
+            span {
+                white-space: nowrap;
+            }
         }
 
         &__item {

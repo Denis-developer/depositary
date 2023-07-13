@@ -17,6 +17,13 @@
 }
 
 @media (max-width: 992px) {
+    .main {
+        .primary {
+            background-size: 1000px;
+            padding: 70px 0px;
+        }
+    }
+
     .container {
         padding: 0px 16px;
     }
@@ -110,7 +117,7 @@
 
             .primary {
                 background-position: right -70px bottom;
-                background-size:60vw;
+                background-size: 60vw;
             }
         }
     }
@@ -120,21 +127,26 @@
             flex-direction: column;
         }
     }
+
     .insurance {
         &__wrapper {
             flex-direction: column;
         }
     }
+
     .values {
         &__wrapper {
             flex-direction: column;
             row-gap: 24px;
         }
+
         &__container {
             row-gap: 24px;
         }
+
         &-block {
             min-height: auto;
+
             &__text {
                 &:nth-child(3) {
                     margin-top: 15px;
@@ -151,6 +163,11 @@
     }
 
     .main {
+        .primary {
+            background-size: 130vw;
+            padding: 50px 0px;
+        }
+
         &.documents {
             .primary {
                 background-position: right -100px bottom;
@@ -187,6 +204,10 @@
     .title {
         font-size: 26px;
         line-height: 34px;
+
+        span {
+            display: block;
+        }
     }
 
     .wrapper {
@@ -201,6 +222,12 @@
     .main {
         padding-top: 111px;
 
+        .primary {
+            background-size: 750px;
+            padding: 16px 0px;
+            padding-top: 23px;
+        }
+
         &.documents {
             padding-top: 73px;
 
@@ -209,6 +236,7 @@
                 background-position: right -40px bottom;
             }
         }
+
         &.disclosure {
             padding-top: 73px;
 
@@ -226,6 +254,13 @@
         &__text {
             flex-direction: column;
             align-items: flex-start;
+        }
+
+        &__icon {
+            height: 48px;
+            width: 48px;
+            font-size: 12.923px;
+            line-height: 20.308px;
         }
     }
 
@@ -294,7 +329,6 @@
 
     .primary {
         background-size: 700px;
-        padding: 16px 0px;
 
         &__text {
             margin-top: 12px;
@@ -350,7 +384,7 @@
             margin-top: 32px;
 
             &__title {
-                padding: 20px 16px;
+                padding: 16px 20px;
             }
         }
     }
@@ -375,6 +409,11 @@
 
         &-block {
             padding: 24px 0px;
+            gap: 16px;
+
+            &__content {
+                max-width: 300px;
+            }
 
             .icon__wrapper {
                 padding: 12px;
@@ -440,6 +479,10 @@
 
         &-accordion {
             margin-top: 48px;
+
+            &__title {
+                padding: 16px 20px;
+            }
         }
     }
 
@@ -478,7 +521,7 @@
 
                 img {
                     display: none;
-                    width: auto;
+                    width: 200px;
                 }
 
                 &_mob {
@@ -544,11 +587,8 @@
             flex-direction: column-reverse;
             padding: 0;
             gap: 0px;
-
-            img {
-                display: none;
-                width: auto;
-            }
+            border: 1px solid #E9EAEA;
+            background-color: #fff;
 
             &__content {
                 padding: 20px;
@@ -558,6 +598,11 @@
                 font-size: 16px;
                 line-height: 26px;
                 margin-bottom: 12px;
+            }
+
+            img {
+                display: none;
+                width: 203px;
             }
 
             &__img {
@@ -635,14 +680,15 @@
 }
 
 @media (max-width: 450px) {
-    .primary {
-        background: $stealBlue url(../img/main-page/background-img_mob.png) no-repeat left bottom / contain;
-    }
 
     .main {
+        .primary {
+            background: $stealBlue url(../img/main-page/background-img_mob.png) no-repeat left bottom / contain;
+        }
+
         &.about {
             .primary {
-                background: $stealBlue url(../img/about-page/background-img_mob.png) no-repeat left bottom 40px / contain;
+                background: $stealBlue url(../img/about-page/background-img_mob.png) no-repeat left bottom 50px / contain;
             }
         }
     }

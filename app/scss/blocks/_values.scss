@@ -1,6 +1,7 @@
 .values {
     .icon__wrapper {
         background-color: #F4F4F4;
+        margin-top: -4px;
     }
 
     &__title {
@@ -28,6 +29,7 @@
         background: #fff;
         padding: 0;
         min-height: 126px;
+        overflow: unset;
 
 
         &__title {

@@ -5,6 +5,11 @@
         border-bottom: 1px solid #E1E1E3;
         .footer__text {
             color: $slateGray;
+            font-size: 14px;
+            line-height: 22px;
+            span {
+                white-space: nowrap;
+            }
         }
 
         .container {
